@@ -21,6 +21,9 @@ namespace BarbeariaPatrick
         public string consulta;
         public string sql;
 
+        string[] Servicos = new string[9] { "Corte Estrela", "Corte Degrade", "Barba Estrela", "Combo Estrela",
+            "Barba Pigmentada", "Luzes e Luzes Invertida", "Coloração", "Platinado", "Alisamento" };
+
         private void Serviços_Load(object sender, EventArgs e)
         {
             consulta = "SELECT NomeServico FROM tbl_Servicos";
@@ -36,7 +39,7 @@ namespace BarbeariaPatrick
         private void cmbServico_SelectedIndexChanged(object sender, EventArgs e)
         {
             consulta = "SELECT PreçoServico FROM tbl_Servicos WHERE NomeServico = '"  + cmbServico.SelectedItem.ToString() + "';";
-            MessageBox.Show(consulta);
+
 
             ConsultarServico consultaServico = new ConsultarServico();
             consultaServico.fazerConsulta(consulta);
@@ -46,18 +49,28 @@ namespace BarbeariaPatrick
             string imagem = String.Empty;
 
             int i;
-            for(i=0; i < servico.Length; i++)
+            for (i = 0; i < Servicos.Length; i++)
             {
-                if(servico == servicos[i])
+                if (servico == Servicos[i])
                 {
-                    imagem = "C:\\servicos\\" + servico + ".jfjf"
+                    imagem = "C:\\servicos\\" + servico + ".jpg";
+
+                    pictFotoServico.ImageLocation= imagem;
+                    break;
                 }
+            }
 
         }
 
         private void pictFotoServico_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente Tela = new ConsultarCliente();
+            Tela.Show();
         }
     }
 }

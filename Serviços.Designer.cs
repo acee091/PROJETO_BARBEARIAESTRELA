@@ -31,7 +31,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agendamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cmbServico = new System.Windows.Forms.ComboBox();
             this.lblEscolhaServico = new System.Windows.Forms.Label();
@@ -57,8 +56,7 @@
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clientesToolStripMenuItem,
-            this.agendamentosToolStripMenuItem});
+            this.clientesToolStripMenuItem});
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.consultarToolStripMenuItem.Text = "Consultar";
@@ -67,13 +65,8 @@
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientesToolStripMenuItem.Text = "Clientes";
-            // 
-            // agendamentosToolStripMenuItem
-            // 
-            this.agendamentosToolStripMenuItem.Name = "agendamentosToolStripMenuItem";
-            this.agendamentosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agendamentosToolStripMenuItem.Text = "Agendamentos";
+            this.clientesToolStripMenuItem.Text = "Agendamentos";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // agendarToolStripMenuItem
             // 
@@ -101,9 +94,10 @@
             // 
             // pictFotoServico
             // 
-            this.pictFotoServico.Location = new System.Drawing.Point(293, 46);
+            this.pictFotoServico.Location = new System.Drawing.Point(248, 41);
             this.pictFotoServico.Name = "pictFotoServico";
-            this.pictFotoServico.Size = new System.Drawing.Size(460, 264);
+            this.pictFotoServico.Size = new System.Drawing.Size(528, 381);
+            this.pictFotoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictFotoServico.TabIndex = 3;
             this.pictFotoServico.TabStop = false;
             // 
@@ -154,7 +148,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agendamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendarToolStripMenuItem;
         private System.Windows.Forms.ComboBox cmbServico;
         private System.Windows.Forms.Label lblEscolhaServico;
