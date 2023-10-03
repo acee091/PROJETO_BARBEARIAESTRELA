@@ -167,6 +167,7 @@
             this.cmbNomeCliente.Name = "cmbNomeCliente";
             this.cmbNomeCliente.Size = new System.Drawing.Size(166, 21);
             this.cmbNomeCliente.TabIndex = 13;
+            this.cmbNomeCliente.SelectedIndexChanged += new System.EventHandler(this.cmbNomeCliente_SelectedIndexChanged);
             // 
             // pictureBox1
             // 

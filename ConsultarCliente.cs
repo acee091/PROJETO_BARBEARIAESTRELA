@@ -44,13 +44,18 @@ namespace BarbeariaPatrick
 
         private void ConsultarCliente_Load(object sender, EventArgs e)
         {
-            consulta = "SELECT NomeCliente FROM tbl_AgendamentoCliente1";
+            consulta = "SELECT NomeCliente FROM tbl_AgendamentoCliente";
             CarregaComboBox carregaCliente = new CarregaComboBox();
             List<string> Cliente = new List<string>();
             Cliente.AddRange(carregaCliente.carregaComboBox(consulta, "NomeCliente"));
             cmbNomeCliente.Items.AddRange(Cliente.ToArray());
             
 
+
+        }
+
+        private void cmbNomeCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
