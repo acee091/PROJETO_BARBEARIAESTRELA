@@ -36,7 +36,7 @@
             this.lblPrecoCorte = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.txtAgendarNomeCliente = new System.Windows.Forms.TextBox();
             this.txtTelefoneCliente = new System.Windows.Forms.TextBox();
             this.lblTelefoneCliente = new System.Windows.Forms.Label();
             this.txtAgendarHorarioCliente = new System.Windows.Forms.TextBox();
@@ -111,12 +111,12 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Nome:";
             // 
-            // txtNomeCliente
+            // txtAgendarNomeCliente
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(29, 83);
-            this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(182, 20);
-            this.txtNomeCliente.TabIndex = 8;
+            this.txtAgendarNomeCliente.Location = new System.Drawing.Point(29, 83);
+            this.txtAgendarNomeCliente.Name = "txtAgendarNomeCliente";
+            this.txtAgendarNomeCliente.Size = new System.Drawing.Size(182, 20);
+            this.txtAgendarNomeCliente.TabIndex = 8;
             // 
             // txtTelefoneCliente
             // 
@@ -206,7 +206,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTelefoneCliente);
             this.Controls.Add(this.txtTelefoneCliente);
-            this.Controls.Add(this.txtNomeCliente);
+            this.Controls.Add(this.txtAgendarNomeCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPrecoCorte);
             this.Controls.Add(this.txtPrecoServico);
@@ -230,7 +230,7 @@
         private System.Windows.Forms.Label lblPrecoCorte;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNomeCliente;
+        private System.Windows.Forms.TextBox txtAgendarNomeCliente;
         private System.Windows.Forms.TextBox txtTelefoneCliente;
         private System.Windows.Forms.Label lblTelefoneCliente;
         private System.Windows.Forms.TextBox txtAgendarHorarioCliente;

@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="CarregaComboBox.cs" />
     <Compile Include="ComandosDML.cs" />
+    <Compile Include="ConsultarAgendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAgendamento.Designer.cs">
+      <DependentUpon>ConsultarAgendamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -23,7 +23,7 @@ namespace BarbeariaPatrick
 
         private void btnConsultarCliente_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, IdFuncionario FROM tbl_AgendamentoCliente WHERE " +
+            consulta = "SELECT DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, IdFuncionario FROM tbl_AgendamentoCliente1 WHERE " +
                 " NomeCliente = '" + cmbNomeCliente.SelectedItem.ToString() + "';";
 
             ConsultarClientes consultarCliente = new ConsultarClientes();
@@ -44,7 +44,7 @@ namespace BarbeariaPatrick
 
         private void ConsultarCliente_Load(object sender, EventArgs e)
         {
-            consulta = "SELECT NomeCliente FROM tbl_AgendamentoCliente";
+            consulta = "SELECT NomeCliente FROM tbl_AgendamentoCliente1";
             CarregaComboBox carregaCliente = new CarregaComboBox();
             List<string> Cliente = new List<string>();
             Cliente.AddRange(carregaCliente.carregaComboBox(consulta, "NomeCliente"));
