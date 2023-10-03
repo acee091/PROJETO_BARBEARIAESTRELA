@@ -26,7 +26,7 @@ namespace BarbeariaPatrick
 
         private void Serviços_Load(object sender, EventArgs e)
         {
-            consulta = "SELECT NomeServico FROM tbl_Servicos1";
+            consulta = "SELECT NomeServico FROM tbl_Servicos";
             CarregaComboBox carregaServico = new CarregaComboBox();
 
             List<string> Servicos = new List<string>();
@@ -82,7 +82,9 @@ namespace BarbeariaPatrick
 
         private void btnAgendamentoCliente_Click(object sender, EventArgs e)
         {
-            sql = "INSERT INTO tbl_AgendamentoCliente1(NomeCliente, DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, Telefone) VALUES ('" + txtAgendarNomeCliente + "' , '" + txtAgendarDataCliente + "', '" + txtAgendarHorarioCliente + "' , '" + cmbServico.SelectedItem.ToString() + "', '" + txtPrecoServico + "', '" + txtTelefoneCliente + "');";
+            string servicoSelect = cmbServico.SelectedItem.ToString();
+            sql = "INSERT INTO tbl_AgendamentoCliente(NomeCliente, DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, Telefone) " +
+                "VALUES ('" + txtAgendarNomeCliente + "' , '" + txtAgendarDataCliente + "', '" + txtAgendarHorarioCliente + "' , '" + servicoSelect + "', '" + txtPrecoServico + "', '" + txtTelefoneCliente + "');";
             MessageBox.Show(sql);
 
             ComandosDML inserir = new ComandosDML();

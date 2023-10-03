@@ -104,6 +104,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "TelaInicial";
             this.Text = "TelaInicial";
+            this.Load += new System.EventHandler(this.TelaInicial_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

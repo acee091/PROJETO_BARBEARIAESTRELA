@@ -22,10 +22,14 @@ namespace BarbeariaPatrick
 
         public static string CaixaTxtAgendarNomeCliente { get; set; }
 
-        public static string CaixaTxtAgendarTelefoneCliente { get; set; }
+        public static string CaixaTxtTelefoneCliente { get; set; }
 
-        public static string CaixaTxtAgendarDataCliente { get; set; }
+        public static DateTime CaixaTxtDataCliente { get; set; }
 
-        public static string CaixaTxtAgendarHorarioCliente { get; set; }
+        public static TimeSpan CaixaTxtHorarioCliente { get; set; }
+
+        public static string CaixaTxtNomeServico { get; set; }
+
+        public static string CaixaTxtClientePrecoServico { get; set; }
     }
 }

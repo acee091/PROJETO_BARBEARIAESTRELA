@@ -37,5 +37,10 @@ namespace BarbeariaPatrick
             Tela.Show();
             this.Hide();
         }
+
+        private void TelaInicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

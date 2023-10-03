@@ -84,6 +84,9 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Variaveis.cs" />
+    <EmbeddedResource Include="ConsultarAgendamento.resx">
+      <DependentUpon>ConsultarAgendamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
