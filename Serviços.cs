@@ -72,5 +72,38 @@ namespace BarbeariaPatrick
             ConsultarCliente Tela = new ConsultarCliente();
             Tela.Show();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            TelaInicial Tela = new TelaInicial();
+            Tela.Show();
+            this.Hide();
+        }
+
+        private void btnAgendamentoCliente_Click(object sender, EventArgs e)
+        {
+            sql = "INSERT INTO tbl_AgendamentoCliente(NomeCliente,  DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, Telefone) VALUES ('" + txtNomeCliente + "' , '" + txtAgendarDataCliente + "', '" + txtAgendarHorarioCliente + "' , '" + cmbServico.SelectedItem.ToString() + "', '" + txtPrecoServico + "', '" + txtTelefoneCliente + "');";
+
+            MessageBox.Show(sql);
+
+            ComandosDML inserir = new ComandosDML();
+            try
+            {
+                inserir.iud(sql); 
+                MessageBox.Show("Registro inserido com sucesso");
+            }
+            catch (SqlException s)
+            {
+                MessageBox.Show(s.Source.ToString(), "Erro de banco de dados");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Source.ToString(), "Erro Genérico");
+            }
+            finally
+            {
+                this.Hide();
+            }
+        }
     }
 }

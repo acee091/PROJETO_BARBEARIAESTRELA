@@ -47,13 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarregaComboBox.cs" />
+    <Compile Include="ComandosDML.cs" />
     <Compile Include="ConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultarCliente.Designer.cs">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarClientes.cs" />
     <Compile Include="ConsultarServico.cs" />
+    <Compile Include="Criptografar.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +70,12 @@
     </Compile>
     <Compile Include="Serviços.Designer.cs">
       <DependentUpon>Serviços.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicial.Designer.cs">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Variaveis.cs" />
     <EmbeddedResource Include="ConsultarCliente.resx">
@@ -86,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="Serviços.resx">
       <DependentUpon>Serviços.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

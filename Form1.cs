@@ -19,7 +19,20 @@ namespace BarbeariaPatrick
 
         private void btnEntrarLogin_Click(object sender, EventArgs e)
         {
+            ConsultarCliente Tela = new ConsultarCliente();
+            Tela.Show();
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            TelaInicial Tela = new TelaInicial();
+            Tela.Show();
+            this.Hide();
         }
     }
 }
