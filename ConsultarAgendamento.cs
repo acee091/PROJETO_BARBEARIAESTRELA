@@ -41,5 +41,12 @@ namespace BarbeariaPatrick
             txtMostrarNomeCliente.Text = Variaveis.CaixaTxtNomeCliente;
             txtTelefoneCliente.Text = Variaveis.CaixaTxtTelefoneCliente;
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            TelaInicial Tela = new TelaInicial();
+            Tela.Show();
+            this.Hide();
+        }
     }
 }
