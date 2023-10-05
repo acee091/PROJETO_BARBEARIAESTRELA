@@ -36,7 +36,7 @@
             this.lblSenhaLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVoltarADM = new System.Windows.Forms.Button();
-            this.btnCadastrarFunc = new System.Windows.Forms.Button();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,15 +121,17 @@
             this.btnVoltarADM.UseVisualStyleBackColor = false;
             this.btnVoltarADM.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // btnCadastrarFunc
+            // btnCadastrar
             // 
-            this.btnCadastrarFunc.Location = new System.Drawing.Point(118, 354);
-            this.btnCadastrarFunc.Name = "btnCadastrarFunc";
-            this.btnCadastrarFunc.Size = new System.Drawing.Size(75, 23);
-            this.btnCadastrarFunc.TabIndex = 17;
-            this.btnCadastrarFunc.Text = "Cadastrar-se";
-            this.btnCadastrarFunc.UseVisualStyleBackColor = true;
-            this.btnCadastrarFunc.Click += new System.EventHandler(this.btnCadastrarFunc_Click);
+            this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnCadastrar.Location = new System.Drawing.Point(102, 353);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(106, 28);
+            this.btnCadastrar.TabIndex = 17;
+            this.btnCadastrar.Text = "Cadastrar-se aqui";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrarFunc_Click);
             // 
             // Form1
             // 
@@ -137,7 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnCadastrarFunc);
+            this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.btnVoltarADM);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSenhaLogin);
@@ -164,7 +166,7 @@
         private System.Windows.Forms.Label lblSenhaLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVoltarADM;
-        private System.Windows.Forms.Button btnCadastrarFunc;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }
 

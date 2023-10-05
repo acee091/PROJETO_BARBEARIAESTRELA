@@ -90,6 +90,9 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Variaveis.cs" />
+    <EmbeddedResource Include="CadastrarFuncionario.resx">
+      <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarAgendamento.resx">
       <DependentUpon>ConsultarAgendamento.cs</DependentUpon>
     </EmbeddedResource>
