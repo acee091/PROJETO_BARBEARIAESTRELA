@@ -51,7 +51,7 @@
             // cmbServico
             // 
             this.cmbServico.FormattingEnabled = true;
-            this.cmbServico.Location = new System.Drawing.Point(29, 302);
+            this.cmbServico.Location = new System.Drawing.Point(29, 291);
             this.cmbServico.Name = "cmbServico";
             this.cmbServico.Size = new System.Drawing.Size(182, 21);
             this.cmbServico.TabIndex = 1;
@@ -62,7 +62,7 @@
             this.lblEscolhaServico.AutoSize = true;
             this.lblEscolhaServico.BackColor = System.Drawing.Color.White;
             this.lblEscolhaServico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEscolhaServico.Location = new System.Drawing.Point(46, 283);
+            this.lblEscolhaServico.Location = new System.Drawing.Point(46, 272);
             this.lblEscolhaServico.Name = "lblEscolhaServico";
             this.lblEscolhaServico.Size = new System.Drawing.Size(146, 16);
             this.lblEscolhaServico.TabIndex = 2;
@@ -80,7 +80,7 @@
             // 
             // txtPrecoServico
             // 
-            this.txtPrecoServico.Location = new System.Drawing.Point(29, 359);
+            this.txtPrecoServico.Location = new System.Drawing.Point(29, 349);
             this.txtPrecoServico.Name = "txtPrecoServico";
             this.txtPrecoServico.Size = new System.Drawing.Size(182, 20);
             this.txtPrecoServico.TabIndex = 5;
@@ -90,7 +90,7 @@
             this.lblPrecoCorte.AutoSize = true;
             this.lblPrecoCorte.BackColor = System.Drawing.Color.White;
             this.lblPrecoCorte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecoCorte.Location = new System.Drawing.Point(91, 340);
+            this.lblPrecoCorte.Location = new System.Drawing.Point(91, 330);
             this.lblPrecoCorte.Name = "lblPrecoCorte";
             this.lblPrecoCorte.Size = new System.Drawing.Size(52, 16);
             this.lblPrecoCorte.TabIndex = 6;
@@ -105,7 +105,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 64);
+            this.label1.Location = new System.Drawing.Point(91, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 7;
@@ -113,14 +113,14 @@
             // 
             // txtAgendarNomeCliente
             // 
-            this.txtAgendarNomeCliente.Location = new System.Drawing.Point(29, 83);
+            this.txtAgendarNomeCliente.Location = new System.Drawing.Point(29, 60);
             this.txtAgendarNomeCliente.Name = "txtAgendarNomeCliente";
             this.txtAgendarNomeCliente.Size = new System.Drawing.Size(182, 20);
             this.txtAgendarNomeCliente.TabIndex = 8;
             // 
             // txtTelefoneCliente
             // 
-            this.txtTelefoneCliente.Location = new System.Drawing.Point(29, 135);
+            this.txtTelefoneCliente.Location = new System.Drawing.Point(29, 122);
             this.txtTelefoneCliente.Name = "txtTelefoneCliente";
             this.txtTelefoneCliente.Size = new System.Drawing.Size(182, 20);
             this.txtTelefoneCliente.TabIndex = 9;
@@ -130,7 +130,7 @@
             this.lblTelefoneCliente.AutoSize = true;
             this.lblTelefoneCliente.BackColor = System.Drawing.Color.White;
             this.lblTelefoneCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefoneCliente.Location = new System.Drawing.Point(35, 169);
+            this.lblTelefoneCliente.Location = new System.Drawing.Point(36, 160);
             this.lblTelefoneCliente.Name = "lblTelefoneCliente";
             this.lblTelefoneCliente.Size = new System.Drawing.Size(166, 16);
             this.lblTelefoneCliente.TabIndex = 10;
@@ -138,14 +138,15 @@
             // 
             // txtAgendarHorarioCliente
             // 
-            this.txtAgendarHorarioCliente.Location = new System.Drawing.Point(29, 243);
+            this.txtAgendarHorarioCliente.Location = new System.Drawing.Point(29, 234);
             this.txtAgendarHorarioCliente.Name = "txtAgendarHorarioCliente";
             this.txtAgendarHorarioCliente.Size = new System.Drawing.Size(182, 20);
             this.txtAgendarHorarioCliente.TabIndex = 11;
+            this.txtAgendarHorarioCliente.TextChanged += new System.EventHandler(this.txtAgendarHorarioCliente_TextChanged);
             // 
             // txtAgendarDataCliente
             // 
-            this.txtAgendarDataCliente.Location = new System.Drawing.Point(29, 188);
+            this.txtAgendarDataCliente.Location = new System.Drawing.Point(29, 179);
             this.txtAgendarDataCliente.Name = "txtAgendarDataCliente";
             this.txtAgendarDataCliente.Size = new System.Drawing.Size(182, 20);
             this.txtAgendarDataCliente.TabIndex = 12;
@@ -155,7 +156,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(82, 116);
+            this.label2.Location = new System.Drawing.Point(81, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 16);
             this.label2.TabIndex = 10;
@@ -166,7 +167,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(26, 224);
+            this.label3.Location = new System.Drawing.Point(26, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(185, 16);
             this.label3.TabIndex = 13;
@@ -174,22 +175,26 @@
             // 
             // btnAgendamentoCliente
             // 
+            this.btnAgendamentoCliente.BackColor = System.Drawing.Color.White;
+            this.btnAgendamentoCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendamentoCliente.Location = new System.Drawing.Point(61, 385);
             this.btnAgendamentoCliente.Name = "btnAgendamentoCliente";
-            this.btnAgendamentoCliente.Size = new System.Drawing.Size(109, 37);
+            this.btnAgendamentoCliente.Size = new System.Drawing.Size(109, 53);
             this.btnAgendamentoCliente.TabIndex = 14;
             this.btnAgendamentoCliente.Text = "Agendar";
-            this.btnAgendamentoCliente.UseVisualStyleBackColor = true;
+            this.btnAgendamentoCliente.UseVisualStyleBackColor = false;
             this.btnAgendamentoCliente.Click += new System.EventHandler(this.btnAgendamentoCliente_Click);
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(0, 0);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(75, 23);
             this.btnVoltar.TabIndex = 15;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Serviços

@@ -62,34 +62,39 @@
             // 
             // btnAgendar
             // 
-            this.btnAgendar.Location = new System.Drawing.Point(240, 189);
+            this.btnAgendar.BackColor = System.Drawing.Color.White;
+            this.btnAgendar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgendar.Location = new System.Drawing.Point(165, 281);
             this.btnAgendar.Name = "btnAgendar";
-            this.btnAgendar.Size = new System.Drawing.Size(100, 48);
+            this.btnAgendar.Size = new System.Drawing.Size(170, 68);
             this.btnAgendar.TabIndex = 2;
             this.btnAgendar.Text = "Agendar";
-            this.btnAgendar.UseVisualStyleBackColor = true;
+            this.btnAgendar.UseVisualStyleBackColor = false;
             this.btnAgendar.Click += new System.EventHandler(this.btnAgendar_Click);
             // 
             // btnConsultarAgendamento
             // 
-            this.btnConsultarAgendamento.Location = new System.Drawing.Point(410, 189);
+            this.btnConsultarAgendamento.BackColor = System.Drawing.Color.White;
+            this.btnConsultarAgendamento.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultarAgendamento.Location = new System.Drawing.Point(452, 276);
             this.btnConsultarAgendamento.Name = "btnConsultarAgendamento";
-            this.btnConsultarAgendamento.Size = new System.Drawing.Size(107, 48);
+            this.btnConsultarAgendamento.Size = new System.Drawing.Size(184, 73);
             this.btnConsultarAgendamento.TabIndex = 3;
             this.btnConsultarAgendamento.Text = "Consultar agendamento";
-            this.btnConsultarAgendamento.UseVisualStyleBackColor = true;
+            this.btnConsultarAgendamento.UseVisualStyleBackColor = false;
             this.btnConsultarAgendamento.Click += new System.EventHandler(this.btnConsultarAgendamento_Click);
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Uighur", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCliente.Location = new System.Drawing.Point(284, 85);
+            this.lblCliente.Location = new System.Drawing.Point(152, 78);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(211, 68);
+            this.lblCliente.Size = new System.Drawing.Size(495, 150);
             this.lblCliente.TabIndex = 4;
             this.lblCliente.Text = "SEJA BEM-VINDO À\r\nBARBEARIA ESTRELA";
+            this.lblCliente.Click += new System.EventHandler(this.lblCliente_Click);
             // 
             // TelaInicial
             // 

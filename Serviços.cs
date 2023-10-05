@@ -106,5 +106,10 @@ namespace BarbeariaPatrick
                 this.Hide();
             }
         }
+
+        private void txtAgendarHorarioCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

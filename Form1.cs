@@ -34,5 +34,21 @@ namespace BarbeariaPatrick
             Tela.Show();
             this.Hide();
         }
+
+        private void lblLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSenhaLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCadastrarFunc_Click(object sender, EventArgs e)
+        {
+            CadastrarFuncionario Tela = new CadastrarFuncionario();
+            Tela.Show();
+        }
     }
 }

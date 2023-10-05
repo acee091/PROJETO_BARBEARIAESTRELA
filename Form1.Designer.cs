@@ -36,6 +36,7 @@
             this.lblSenhaLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnVoltarADM = new System.Windows.Forms.Button();
+            this.btnCadastrarFunc = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             this.btnEntrarLogin.BackColor = System.Drawing.SystemColors.InfoText;
             this.btnEntrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarLogin.ForeColor = System.Drawing.Color.White;
-            this.btnEntrarLogin.Location = new System.Drawing.Point(41, 246);
+            this.btnEntrarLogin.Location = new System.Drawing.Point(83, 242);
             this.btnEntrarLogin.Name = "btnEntrarLogin";
             this.btnEntrarLogin.Size = new System.Drawing.Size(145, 67);
             this.btnEntrarLogin.TabIndex = 0;
@@ -56,7 +57,7 @@
             // 
             this.txtSenhaLogin.BackColor = System.Drawing.Color.Black;
             this.txtSenhaLogin.ForeColor = System.Drawing.Color.White;
-            this.txtSenhaLogin.Location = new System.Drawing.Point(6, 181);
+            this.txtSenhaLogin.Location = new System.Drawing.Point(83, 176);
             this.txtSenhaLogin.Name = "txtSenhaLogin";
             this.txtSenhaLogin.Size = new System.Drawing.Size(145, 20);
             this.txtSenhaLogin.TabIndex = 1;
@@ -65,7 +66,7 @@
             // 
             this.txtLogin.BackColor = System.Drawing.Color.Black;
             this.txtLogin.ForeColor = System.Drawing.Color.White;
-            this.txtLogin.Location = new System.Drawing.Point(6, 95);
+            this.txtLogin.Location = new System.Drawing.Point(83, 97);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(145, 20);
             this.txtLogin.TabIndex = 2;
@@ -76,11 +77,12 @@
             this.lblLogin.BackColor = System.Drawing.Color.Black;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
-            this.lblLogin.Location = new System.Drawing.Point(7, 76);
+            this.lblLogin.Location = new System.Drawing.Point(80, 78);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(49, 16);
             this.lblLogin.TabIndex = 3;
             this.lblLogin.Text = "Login:";
+            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
             // 
             // lblSenhaLogin
             // 
@@ -88,11 +90,12 @@
             this.lblSenhaLogin.BackColor = System.Drawing.Color.Black;
             this.lblSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenhaLogin.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaLogin.Location = new System.Drawing.Point(7, 162);
+            this.lblSenhaLogin.Location = new System.Drawing.Point(80, 157);
             this.lblSenhaLogin.Name = "lblSenhaLogin";
             this.lblSenhaLogin.Size = new System.Drawing.Size(55, 16);
             this.lblSenhaLogin.TabIndex = 4;
             this.lblSenhaLogin.Text = "Senha:";
+            this.lblSenhaLogin.Click += new System.EventHandler(this.lblSenhaLogin_Click);
             // 
             // pictureBox1
             // 
@@ -108,13 +111,25 @@
             // 
             // btnVoltarADM
             // 
+            this.btnVoltarADM.BackColor = System.Drawing.Color.White;
+            this.btnVoltarADM.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarADM.Location = new System.Drawing.Point(6, 2);
             this.btnVoltarADM.Name = "btnVoltarADM";
             this.btnVoltarADM.Size = new System.Drawing.Size(75, 23);
             this.btnVoltarADM.TabIndex = 16;
             this.btnVoltarADM.Text = "Voltar";
-            this.btnVoltarADM.UseVisualStyleBackColor = true;
+            this.btnVoltarADM.UseVisualStyleBackColor = false;
             this.btnVoltarADM.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // btnCadastrarFunc
+            // 
+            this.btnCadastrarFunc.Location = new System.Drawing.Point(118, 354);
+            this.btnCadastrarFunc.Name = "btnCadastrarFunc";
+            this.btnCadastrarFunc.Size = new System.Drawing.Size(75, 23);
+            this.btnCadastrarFunc.TabIndex = 17;
+            this.btnCadastrarFunc.Text = "Cadastrar-se";
+            this.btnCadastrarFunc.UseVisualStyleBackColor = true;
+            this.btnCadastrarFunc.Click += new System.EventHandler(this.btnCadastrarFunc_Click);
             // 
             // Form1
             // 
@@ -122,6 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnCadastrarFunc);
             this.Controls.Add(this.btnVoltarADM);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblSenhaLogin);
@@ -148,6 +164,7 @@
         private System.Windows.Forms.Label lblSenhaLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVoltarADM;
+        private System.Windows.Forms.Button btnCadastrarFunc;
     }
 }
 
