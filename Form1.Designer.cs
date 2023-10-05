@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnEntrarLogin = new System.Windows.Forms.Button();
-            this.txtSenhaLogin = new System.Windows.Forms.TextBox();
+            this.txtLogonSenha = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblSenhaLogin = new System.Windows.Forms.Label();
@@ -53,22 +53,25 @@
             this.btnEntrarLogin.UseVisualStyleBackColor = false;
             this.btnEntrarLogin.Click += new System.EventHandler(this.btnEntrarLogin_Click);
             // 
-            // txtSenhaLogin
+            // txtLogonSenha
             // 
-            this.txtSenhaLogin.BackColor = System.Drawing.Color.Black;
-            this.txtSenhaLogin.ForeColor = System.Drawing.Color.White;
-            this.txtSenhaLogin.Location = new System.Drawing.Point(83, 176);
-            this.txtSenhaLogin.Name = "txtSenhaLogin";
-            this.txtSenhaLogin.Size = new System.Drawing.Size(145, 20);
-            this.txtSenhaLogin.TabIndex = 1;
+            this.txtLogonSenha.BackColor = System.Drawing.Color.Black;
+            this.txtLogonSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLogonSenha.ForeColor = System.Drawing.Color.White;
+            this.txtLogonSenha.Location = new System.Drawing.Point(83, 176);
+            this.txtLogonSenha.Name = "txtLogonSenha";
+            this.txtLogonSenha.PasswordChar = '*';
+            this.txtLogonSenha.Size = new System.Drawing.Size(145, 29);
+            this.txtLogonSenha.TabIndex = 1;
             // 
             // txtLogin
             // 
             this.txtLogin.BackColor = System.Drawing.Color.Black;
+            this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.Color.White;
             this.txtLogin.Location = new System.Drawing.Point(83, 97);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(145, 20);
+            this.txtLogin.Size = new System.Drawing.Size(145, 29);
             this.txtLogin.TabIndex = 2;
             // 
             // lblLogin
@@ -127,7 +130,7 @@
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCadastrar.Location = new System.Drawing.Point(102, 353);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(106, 28);
+            this.btnCadastrar.Size = new System.Drawing.Size(112, 30);
             this.btnCadastrar.TabIndex = 17;
             this.btnCadastrar.Text = "Cadastrar-se aqui";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -145,7 +148,7 @@
             this.Controls.Add(this.lblSenhaLogin);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.txtLogin);
-            this.Controls.Add(this.txtSenhaLogin);
+            this.Controls.Add(this.txtLogonSenha);
             this.Controls.Add(this.btnEntrarLogin);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Form1";
@@ -160,7 +163,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnEntrarLogin;
-        private System.Windows.Forms.TextBox txtSenhaLogin;
+        private System.Windows.Forms.TextBox txtLogonSenha;
         private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.Label lblSenhaLogin;

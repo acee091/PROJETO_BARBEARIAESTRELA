@@ -25,11 +25,13 @@ namespace BarbeariaPatrick
                 {
                     while (drDados.Read())
                     {
-                        Variaveis.CaixaTxtPrecoServico = string.Format("{0:0.00}", drDados["PrecoServico"]);
+                        
                         Variaveis.CaixaTxtDataAgendamento = (DateTime)drDados["DataAgendamento"];
-                        Variaveis.CaixaTxtFuncionario = drDados["IdFuncionario"].ToString();
-                        Variaveis.CaixaTxtHorarioAgendamento = (TimeSpan)drDados["HorarioAgendamento"];
                         Variaveis.CaixaTxtServico = (string)drDados["NomeServico"];
+                        Variaveis.CaixaTxtPrecoServico = string.Format("{0:0.00}", drDados["PreçoServico"]);
+                        Variaveis.CaixaTxtFuncionario = (string)drDados["NomeFuncionario"];
+                        Variaveis.CaixaTxtHorarioAgendamento = (TimeSpan)drDados["HorarioAgendamento"];
+                        
                     }
                 }
                 else

@@ -7,33 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace BarbeariaPatrick
 {
-    public partial class CadastrarFuncionario : Form
+    public partial class CadastrarCliente : Form
     {
-        public CadastrarFuncionario()
+        public CadastrarCliente()
         {
             InitializeComponent();
         }
-        
 
         private void btnCadastrarFuncionario_Click(object sender, EventArgs e)
         {
-            if (txtCadastraSenha.Text.Equals(txtConfirmarSenha.Text))
+            if (txtClienteSenha.Text.Equals(txtConfirmarClienteSenha.Text))
             {
-                
+
                 Criptografar cripto = new Criptografar();
-                string senha = cripto.HashSHA256(txtCadastraSenha.Text);
+                string senha = cripto.HashSHA256(txtClienteSenha.Text);
 
 
 
                 // Criar string SQL:
-                string sql = "INSERT INTO tbl_logon(Nome_user, Senha) VALUES ('" + txtCadastraNome.Text + "','" + senha + "')";
-                
+                string sql = "INSERT INTO tbl_ClienteLogon(cliente_user, clientesenha) VALUES ('" + txtClienteLogin.Text + "','" + senha + "')";
+
                 ComandosDML inserir = new ComandosDML();
-               
+
                 try
                 {
                     inserir.iud(sql);
@@ -47,11 +45,6 @@ namespace BarbeariaPatrick
             {
                 MessageBox.Show("As senhas digitadas não correspondem", "Senha inválida");
             }
-        }
-
-        private void CadastrarFuncionario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

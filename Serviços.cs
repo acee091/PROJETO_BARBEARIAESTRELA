@@ -83,7 +83,7 @@ namespace BarbeariaPatrick
         private void btnAgendamentoCliente_Click(object sender, EventArgs e)
         {
             string servicoSelect = cmbServico.SelectedItem.ToString();
-            sql = "INSERT INTO tbl_CadastroCliente1(NomeCliente, DataAgendamento, HorarioAgendamento, NomeServico, PrecoServico, Telefone) " +
+            sql = "INSERT INTO tbl_CadastroCliente1(NomeCliente, DataAgendamento, HorarioAgendamento, NomeServico, PreçoServico, Telefone) " +
                 "VALUES ('" + txtAgendarNomeCliente + "' , '" + txtAgendarDataCliente + "', '" + txtAgendarHorarioCliente + "' , '" + servicoSelect + "', '" + txtPrecoServico + "', '" + txtTelefoneCliente + "');";
             MessageBox.Show(sql);
 

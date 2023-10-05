@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.Designer.cs">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,12 +60,6 @@
     </Compile>
     <Compile Include="CarregaComboBox.cs" />
     <Compile Include="ComandosDML.cs" />
-    <Compile Include="ConsultarAgendamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConsultarAgendamento.Designer.cs">
-      <DependentUpon>ConsultarAgendamento.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +69,12 @@
     <Compile Include="ConsultarClientes.cs" />
     <Compile Include="ConsultarServico.cs" />
     <Compile Include="Criptografar.cs" />
+    <Compile Include="EntrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntrarCliente.Designer.cs">
+      <DependentUpon>EntrarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,14 +96,17 @@
       <DependentUpon>TelaInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Variaveis.cs" />
+    <EmbeddedResource Include="CadastrarCliente.resx">
+      <DependentUpon>CadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarFuncionario.resx">
       <DependentUpon>CadastrarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConsultarAgendamento.resx">
-      <DependentUpon>ConsultarAgendamento.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConsultarCliente.resx">
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntrarCliente.resx">
+      <DependentUpon>EntrarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

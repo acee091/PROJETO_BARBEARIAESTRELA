@@ -33,9 +33,9 @@ namespace BarbeariaPatrick
 
         private void btnConsultarAgendamento_Click(object sender, EventArgs e)
         {
-            ConsultarAgendamento Tela = new ConsultarAgendamento();
+            EntrarCliente Tela = new EntrarCliente();
             Tela.Show();
-            this.Hide();
+
         }
 
         private void TelaInicial_Load(object sender, EventArgs e)
