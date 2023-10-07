@@ -23,10 +23,9 @@ namespace BarbeariaPatrick
 
         private void btnConsultarCliente_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT CC.DataAgendamento, CC.HorarioAgendamento, SC.NomeServico, SC.PreçoServico, " +
-                "FUNC.NomeFuncionario FROM tbl_CadastroCliente1 CC INNER JOIN tbl_Cliente_Servicos1 CS ON CC.IdCliente = CS.IdCliente " +
-                "INNER JOIN tbl_Servicos1 SC ON CS.IdServiço = SC.IdServiço INNER JOIN tbl_funcionario_servico FSC ON FSC.IdServiço = SC.IdServiço " +
-                "INNER JOIN tbl_Funcionarios1 FUNC ON FUNC.IdFuncionario = FSC.IdFuncionario WHERE NomeCliente = '" + cmbNomeCliente.SelectedItem.ToString() + "';";
+            consulta = "SELECT CC.NomeCliente, AC.DataAgendamento, AC.HorarioAgendamento, SC.NomeServico, SC.PreçoServico, CC.Telefone " +
+                "FROM tbl_CadastroCliente1 CC INNER JOIN tbl_AgendamentoCliente AC ON AC.IdCliente = CC.IdCliente " +
+                "INNER JOIN tbl_Servicos1 SC ON SC IdServiço = AC.IdServiço WHERE NomeCliente = '" + cmbNomeCliente.SelectedItem.ToString() + "'; ";
 
             ConsultarClientes consultarCliente = new ConsultarClientes();
             consultarCliente.fazerConsulta(consulta);
