@@ -28,8 +28,8 @@ namespace BarbeariaPatrick
 
 
                 // Criar string SQL:
-                string sql = "INSERT INTO tbl_CadastroCliente(NomeCliente, Telefone, loginCliente, senhaCliente) VALUES ('" + txtNomeCliente.Text+ "', '" + txtTelefoneCliente.Text + "','" + txtClienteLogin.Text + "','" + senha + "')";
-
+                string sql = "INSERT INTO tbl_CadastroCliente1(NomeCliente, Telefone, loginCliente, senhaCliente) VALUES ('" + txtNomeCliente.Text+ "', '" + txtTelefoneCliente.Text + "','" + txtClienteLogin.Text + "','" + senha + "')";
+                MessageBox.Show(sql);
                 ComandosDML inserir = new ComandosDML();
 
                 try

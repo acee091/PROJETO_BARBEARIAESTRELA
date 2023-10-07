@@ -32,7 +32,7 @@ namespace BarbeariaPatrick
             Criptografar cripto = new Criptografar();
 
 
-            string SQLsenha = "SELECT senhaCliente FROM tbl_CadastroCliente WHERE loginCliente = '" + txtLogin.Text + "'";
+            string SQLsenha = "SELECT senhaCliente FROM tbl_CadastroCliente1 WHERE loginCliente = '" + txtLogin.Text + "'";
             consultaSenha(SQLsenha);
 
 
@@ -45,7 +45,7 @@ namespace BarbeariaPatrick
             if (comparar.Compare(senha, senhaUser) == 0)
             {
                 this.Hide();
-                ConsultarCliente TelaInicial = new ConsultarCliente();
+                Serviços TelaInicial = new Serviços();
                 TelaInicial.Show();
             }
             else
@@ -67,7 +67,7 @@ namespace BarbeariaPatrick
                 while (drDados.Read())
                 {
 
-                    senhaUser = (string)drDados["Senha"];
+                    senhaUser = (string)drDados["senhaCliente"];
                 }
                 drDados.Close();
                 conn.Close();

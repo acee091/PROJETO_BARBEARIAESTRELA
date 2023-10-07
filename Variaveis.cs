@@ -11,7 +11,7 @@ namespace BarbeariaPatrick
 {
     public static class Variaveis
     {
-        public static string strConn = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=db_BarbeariaEstrela2023; User ID=sa;Password=123456;";
+        public static string strConn = "Data Source=localhost\\PROJETO;Initial Catalog=db_Projeto; User ID=sa;Password=Ana@123;";
 
         public static string CaixaTxtPrecoServico { get; set; }
         public static string CaixaTxtNomeCliente { get; set; }
