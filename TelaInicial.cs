@@ -19,6 +19,7 @@ namespace BarbeariaPatrick
 
         private void administradorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             Form1 Tela = new Form1();
             Tela.Show();
             this.Hide();
@@ -26,7 +27,7 @@ namespace BarbeariaPatrick
 
         private void btnAgendar_Click(object sender, EventArgs e)
         {
-            Serviços Tela = new Serviços();
+            CadastrarCliente Tela = new CadastrarCliente();
             Tela.Show();
             this.Hide();
         }
@@ -35,7 +36,7 @@ namespace BarbeariaPatrick
         {
             EntrarCliente Tela = new EntrarCliente();
             Tela.Show();
-
+            this.Hide();
         }
 
         private void TelaInicial_Load(object sender, EventArgs e)

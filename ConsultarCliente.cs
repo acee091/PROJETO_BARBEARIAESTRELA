@@ -37,10 +37,7 @@ namespace BarbeariaPatrick
             txtServico.Text = Variaveis.CaixaTxtServico;
 
 
-            string cliente = cmbNomeCliente.SelectedItem.ToString();
-            
-
-            
+            string cliente = cmbNomeCliente.SelectedItem.ToString();           
 
         }
 

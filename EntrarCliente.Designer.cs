@@ -42,9 +42,10 @@
             this.lblSenhaLogin.BackColor = System.Drawing.Color.Black;
             this.lblSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenhaLogin.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaLogin.Location = new System.Drawing.Point(326, 189);
+            this.lblSenhaLogin.Location = new System.Drawing.Point(435, 233);
+            this.lblSenhaLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSenhaLogin.Name = "lblSenhaLogin";
-            this.lblSenhaLogin.Size = new System.Drawing.Size(55, 16);
+            this.lblSenhaLogin.Size = new System.Drawing.Size(67, 20);
             this.lblSenhaLogin.TabIndex = 9;
             this.lblSenhaLogin.Text = "Senha:";
             // 
@@ -54,9 +55,10 @@
             this.lblLogin.BackColor = System.Drawing.Color.Black;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
-            this.lblLogin.Location = new System.Drawing.Point(326, 110);
+            this.lblLogin.Location = new System.Drawing.Point(435, 135);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(49, 16);
+            this.lblLogin.Size = new System.Drawing.Size(61, 20);
             this.lblLogin.TabIndex = 8;
             this.lblLogin.Text = "Login:";
             // 
@@ -65,9 +67,10 @@
             this.txtLogin.BackColor = System.Drawing.Color.Black;
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.Color.White;
-            this.txtLogin.Location = new System.Drawing.Point(329, 129);
+            this.txtLogin.Location = new System.Drawing.Point(439, 159);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(145, 29);
+            this.txtLogin.Size = new System.Drawing.Size(192, 34);
             this.txtLogin.TabIndex = 7;
             // 
             // txtLogonSenha
@@ -75,10 +78,11 @@
             this.txtLogonSenha.BackColor = System.Drawing.Color.Black;
             this.txtLogonSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogonSenha.ForeColor = System.Drawing.Color.White;
-            this.txtLogonSenha.Location = new System.Drawing.Point(329, 208);
+            this.txtLogonSenha.Location = new System.Drawing.Point(439, 256);
+            this.txtLogonSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLogonSenha.Name = "txtLogonSenha";
             this.txtLogonSenha.PasswordChar = '*';
-            this.txtLogonSenha.Size = new System.Drawing.Size(145, 29);
+            this.txtLogonSenha.Size = new System.Drawing.Size(192, 34);
             this.txtLogonSenha.TabIndex = 6;
             // 
             // btnEntrarLogin
@@ -86,36 +90,41 @@
             this.btnEntrarLogin.BackColor = System.Drawing.SystemColors.InfoText;
             this.btnEntrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarLogin.ForeColor = System.Drawing.Color.White;
-            this.btnEntrarLogin.Location = new System.Drawing.Point(329, 274);
+            this.btnEntrarLogin.Location = new System.Drawing.Point(439, 337);
+            this.btnEntrarLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEntrarLogin.Name = "btnEntrarLogin";
-            this.btnEntrarLogin.Size = new System.Drawing.Size(145, 67);
+            this.btnEntrarLogin.Size = new System.Drawing.Size(193, 82);
             this.btnEntrarLogin.TabIndex = 5;
             this.btnEntrarLogin.Text = "Entrar";
             this.btnEntrarLogin.UseVisualStyleBackColor = false;
+            this.btnEntrarLogin.Click += new System.EventHandler(this.btnEntrarLogin_Click);
             // 
             // btnVoltarADM
             // 
             this.btnVoltarADM.BackColor = System.Drawing.Color.White;
             this.btnVoltarADM.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltarADM.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltarADM.Location = new System.Drawing.Point(16, 15);
+            this.btnVoltarADM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVoltarADM.Name = "btnVoltarADM";
-            this.btnVoltarADM.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltarADM.Size = new System.Drawing.Size(100, 28);
             this.btnVoltarADM.TabIndex = 17;
             this.btnVoltarADM.Text = "Voltar";
             this.btnVoltarADM.UseVisualStyleBackColor = false;
+            this.btnVoltarADM.Click += new System.EventHandler(this.btnVoltarADM_Click);
             // 
             // EntrarCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.btnVoltarADM);
             this.Controls.Add(this.lblSenhaLogin);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.txtLogin);
             this.Controls.Add(this.txtLogonSenha);
             this.Controls.Add(this.btnEntrarLogin);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EntrarCliente";
             this.Text = "EntrarCliente";
             this.ResumeLayout(false);

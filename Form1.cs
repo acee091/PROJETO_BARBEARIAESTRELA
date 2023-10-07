@@ -25,7 +25,7 @@ namespace BarbeariaPatrick
             Criptografar cripto = new Criptografar();
 
 
-            string SQLsenha = "SELECT Senha FROM tbl_Logon WHERE Nome_user = '" + txtLogin.Text + "'";
+            string SQLsenha = "SELECT senha FROM tbl_Logon WHERE Nome_user = '" + txtLogin.Text + "'";
             consultaSenha(SQLsenha);           
 
 
@@ -108,6 +108,11 @@ namespace BarbeariaPatrick
             {
 
             }
+        }
+
+        private void txtLogonSenha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
