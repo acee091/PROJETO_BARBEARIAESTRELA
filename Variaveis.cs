@@ -21,6 +21,8 @@ namespace BarbeariaPatrick
         public static string CaixaTxtFuncionario { get; set; }
 
         public static string CaixaTxtAgendarNomeCliente { get; set; }
+        public static int CaixaTxtIDServico { get; set; }
+        public static int CaixaTxtIDCliente { get; set; }
 
         public static string CaixaTxtTelefoneCliente { get; set; }
 

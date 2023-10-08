@@ -23,9 +23,12 @@ namespace BarbeariaPatrick
 
         private void btnConsultarCliente_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT CC.NomeCliente, AC.DataAgendamento, AC.HorarioAgendamento, SC.NomeServico, SC.PreçoServico, CC.Telefone " +
-                "FROM tbl_CadastroCliente1 CC INNER JOIN tbl_AgendamentoCliente AC ON AC.IdCliente = CC.IdCliente " +
-                "INNER JOIN tbl_Servicos1 SC ON SC IdServiço = AC.IdServiço WHERE NomeCliente = '" + cmbNomeCliente.SelectedItem.ToString() + "'; ";
+            consulta = "SELECT AC.DataAgendamento, AC.HorarioAgendamento, SC.NomeServico, SC.PreçoServico, F.NomeFuncionario " +
+                "FROM tbl_AgendamentoCliente AC INNER JOIN tbl_funcionario_servico FC ON FC.IdServiço = AC.IdServiço " +
+                "INNER JOIN tbl_Funcionarios1 F ON F.IdFuncionario = FC.IdFuncionario INNER JOIN tbl_Servicos1 SC " +
+                "ON SC.IdServiço = AC.IdServiço INNER JOIN tbl_CadastroCliente1 CC ON CC.IdCliente = AC.IdCliente " +
+                "WHERE NomeCliente = '" + cmbNomeCliente.SelectedItem.ToString() + "'; ";
+            MessageBox.Show(consulta);
 
             ConsultarClientes consultarCliente = new ConsultarClientes();
             consultarCliente.fazerConsulta(consulta);
@@ -34,6 +37,7 @@ namespace BarbeariaPatrick
             txtDataAgendamento.Text = Variaveis.CaixaTxtDataAgendamento.ToString("dd/MM/yyyy");
             txtHorarioAgendamento.Text = Variaveis.CaixaTxtHorarioAgendamento.ToString();
             txtServico.Text = Variaveis.CaixaTxtServico;
+            
 
 
             string cliente = cmbNomeCliente.SelectedItem.ToString();           

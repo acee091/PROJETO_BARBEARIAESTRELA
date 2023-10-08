@@ -38,12 +38,12 @@ namespace BarbeariaPatrick
 
         private void cmbServico_SelectedIndexChanged(object sender, EventArgs e)
         {
-            consulta = "SELECT PreçoServico FROM tbl_Servicos1 WHERE NomeServico = '"  + cmbServico.SelectedItem.ToString() + "';";
-
+            consulta = "SELECT PreçoServico, IdServiço FROM tbl_Servicos1 WHERE NomeServico = '" + cmbServico.SelectedItem.ToString() + "';";
 
             ConsultarServico consultaServico = new ConsultarServico();
             consultaServico.fazerConsulta(consulta);
             txtPrecoServico.Text = Variaveis.CaixaTxtPrecoServico;
+            txtIDservico.Text = Variaveis.CaixaTxtIDServico.ToString();
 
             string servico = cmbServico.SelectedItem.ToString();
             string imagem = String.Empty;
@@ -82,16 +82,15 @@ namespace BarbeariaPatrick
 
         private void btnAgendamentoCliente_Click(object sender, EventArgs e)
         {
-            string servicoSelect = cmbServico.SelectedItem.ToString();
             sql = "INSERT INTO tbl_AgendamentoCliente(IdCliente, IdServiço, DataAgendamento, HorarioAgendamento) " +
-                "VALUES ( '" + txtAgendarDataCliente + "', '" + txtAgendarHorarioCliente + "' , '" + servicoSelect + "', '" + txtPrecoServico + "');";
+                "VALUES ('" + txtIDcliente.Text + "','" + txtIDdoServico.Text + "', '" + txtAgendarDataCliente.Text + "', '" + txtAgendarHorarioCliente.Text + "');";
             MessageBox.Show(sql);
 
             ComandosDML inserir = new ComandosDML();
             try
             {
                 inserir.iud(sql); 
-                MessageBox.Show("Registro inserido com sucesso");
+                MessageBox.Show("Agendamento marcado com sucesso");
             }
             catch (SqlException s)
             {
@@ -108,6 +107,81 @@ namespace BarbeariaPatrick
         }
 
         private void txtAgendarHorarioCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDservico_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDcliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIDdoServico_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTelefoneCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAgendarDataCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsultarID_Click(object sender, EventArgs e)
+        {
+            consulta = "SELECT IdCliente FROM tbl_CadastroCliente1 WHERE NomeCliente = '" + txtConsultarIDcliente.Text + "'; ";
+
+            ConsultarIDcliente Consultarcliente = new ConsultarIDcliente();
+
+            Consultarcliente.fazerConsulta(consulta);
+            txtConsultarIDcliente.Text = Variaveis.CaixaTxtIDCliente.ToString();
+        }
+
+        private void lblPrecoCorte_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEscolhaServico_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPrecoServico_TextChanged(object sender, EventArgs e)
         {
 
         }

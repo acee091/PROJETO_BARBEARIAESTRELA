@@ -67,6 +67,7 @@
       <DependentUpon>ConsultarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="ConsultarClientes.cs" />
+    <Compile Include="ConsultarIDcliente.cs" />
     <Compile Include="ConsultarServico.cs" />
     <Compile Include="Criptografar.cs" />
     <Compile Include="EntrarCliente.cs">

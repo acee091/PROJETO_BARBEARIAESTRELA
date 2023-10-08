@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace BarbeariaPatrick
 {
-    class ConsultarClientes
+    class ConsultarIDcliente
     {
         public void fazerConsulta(string consulta)
         {
@@ -25,12 +25,7 @@ namespace BarbeariaPatrick
                 {
                     while (drDados.Read())
                     {
-                        
-                        Variaveis.CaixaTxtDataAgendamento = (DateTime)drDados["DataAgendamento"];
-                        Variaveis.CaixaTxtServico = (string)drDados["NomeServico"];
-                        Variaveis.CaixaTxtPrecoServico = string.Format("{0:0.00}", drDados["PreçoServico"]);                       
-                        Variaveis.CaixaTxtHorarioAgendamento = (TimeSpan)drDados["HorarioAgendamento"];                        
-                        Variaveis.CaixaTxtFuncionario = (string)drDados["NomeFuncionario"];
+                        Variaveis.CaixaTxtIDCliente = (short)drDados["IdCliente"];
                     }
                 }
                 else

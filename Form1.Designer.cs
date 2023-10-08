@@ -46,7 +46,7 @@
             this.btnEntrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarLogin.ForeColor = System.Drawing.Color.White;
             this.btnEntrarLogin.Location = new System.Drawing.Point(111, 298);
-            this.btnEntrarLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEntrarLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnEntrarLogin.Name = "btnEntrarLogin";
             this.btnEntrarLogin.Size = new System.Drawing.Size(193, 82);
             this.btnEntrarLogin.TabIndex = 0;
@@ -60,7 +60,7 @@
             this.txtLogonSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogonSenha.ForeColor = System.Drawing.Color.White;
             this.txtLogonSenha.Location = new System.Drawing.Point(111, 217);
-            this.txtLogonSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogonSenha.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogonSenha.Name = "txtLogonSenha";
             this.txtLogonSenha.PasswordChar = '*';
             this.txtLogonSenha.Size = new System.Drawing.Size(192, 34);
@@ -73,7 +73,7 @@
             this.txtLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLogin.ForeColor = System.Drawing.Color.White;
             this.txtLogin.Location = new System.Drawing.Point(111, 119);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(192, 34);
             this.txtLogin.TabIndex = 2;
@@ -111,10 +111,10 @@
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(439, -9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(506, -7);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(627, 565);
+            this.pictureBox1.Size = new System.Drawing.Size(559, 565);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -124,7 +124,7 @@
             this.btnVoltarADM.BackColor = System.Drawing.Color.White;
             this.btnVoltarADM.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltarADM.Location = new System.Drawing.Point(8, 2);
-            this.btnVoltarADM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnVoltarADM.Margin = new System.Windows.Forms.Padding(4);
             this.btnVoltarADM.Name = "btnVoltarADM";
             this.btnVoltarADM.Size = new System.Drawing.Size(100, 28);
             this.btnVoltarADM.TabIndex = 16;
@@ -137,7 +137,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCadastrar.Location = new System.Drawing.Point(136, 434);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(149, 37);
             this.btnCadastrar.TabIndex = 17;
@@ -160,7 +160,7 @@
             this.Controls.Add(this.txtLogonSenha);
             this.Controls.Add(this.btnEntrarLogin);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

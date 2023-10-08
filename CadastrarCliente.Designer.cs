@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarCliente));
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTelefoneCliente = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.pictFotoServico = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCadastrarCliente
@@ -207,12 +210,24 @@
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // pictFotoServico
+            // 
+            this.pictFotoServico.Image = ((System.Drawing.Image)(resources.GetObject("pictFotoServico.Image")));
+            this.pictFotoServico.Location = new System.Drawing.Point(905, -1);
+            this.pictFotoServico.Margin = new System.Windows.Forms.Padding(4);
+            this.pictFotoServico.Name = "pictFotoServico";
+            this.pictFotoServico.Size = new System.Drawing.Size(164, 163);
+            this.pictFotoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictFotoServico.TabIndex = 29;
+            this.pictFotoServico.TabStop = false;
+            // 
             // CadastrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictFotoServico);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTelefoneCliente);
@@ -230,6 +245,7 @@
             this.Name = "CadastrarCliente";
             this.Text = "CadastrarCliente";
             this.Load += new System.EventHandler(this.CadastrarCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +266,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTelefoneCliente;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.PictureBox pictFotoServico;
     }
 }

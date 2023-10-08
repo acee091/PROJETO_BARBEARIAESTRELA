@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaInicial));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.administradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
             this.btnEntrarCliente = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
+            this.pictFotoServico = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -67,7 +70,7 @@
             this.btnCadastrarCliente.BackColor = System.Drawing.Color.White;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.Location = new System.Drawing.Point(220, 346);
-            this.btnCadastrarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCadastrarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
             this.btnCadastrarCliente.Size = new System.Drawing.Size(227, 84);
             this.btnCadastrarCliente.TabIndex = 2;
@@ -79,8 +82,8 @@
             // 
             this.btnEntrarCliente.BackColor = System.Drawing.Color.White;
             this.btnEntrarCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrarCliente.Location = new System.Drawing.Point(603, 340);
-            this.btnEntrarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEntrarCliente.Location = new System.Drawing.Point(616, 343);
+            this.btnEntrarCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnEntrarCliente.Name = "btnEntrarCliente";
             this.btnEntrarCliente.Size = new System.Drawing.Size(245, 90);
             this.btnEntrarCliente.TabIndex = 3;
@@ -93,7 +96,7 @@
             this.lblCliente.AutoSize = true;
             this.lblCliente.Font = new System.Drawing.Font("Microsoft Uighur", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCliente.Location = new System.Drawing.Point(203, 96);
+            this.lblCliente.Location = new System.Drawing.Point(224, 96);
             this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
             this.lblCliente.Size = new System.Drawing.Size(620, 190);
@@ -102,23 +105,36 @@
             this.lblCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCliente.Click += new System.EventHandler(this.lblCliente_Click);
             // 
+            // pictFotoServico
+            // 
+            this.pictFotoServico.Image = ((System.Drawing.Image)(resources.GetObject("pictFotoServico.Image")));
+            this.pictFotoServico.Location = new System.Drawing.Point(471, 325);
+            this.pictFotoServico.Margin = new System.Windows.Forms.Padding(4);
+            this.pictFotoServico.Name = "pictFotoServico";
+            this.pictFotoServico.Size = new System.Drawing.Size(124, 125);
+            this.pictFotoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictFotoServico.TabIndex = 5;
+            this.pictFotoServico.TabStop = false;
+            // 
             // TelaInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictFotoServico);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.btnEntrarCliente);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaInicial";
             this.Text = "TelaInicial";
             this.Load += new System.EventHandler(this.TelaInicial_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +148,6 @@
         private System.Windows.Forms.Button btnCadastrarCliente;
         private System.Windows.Forms.Button btnEntrarCliente;
         private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.PictureBox pictFotoServico;
     }
 }

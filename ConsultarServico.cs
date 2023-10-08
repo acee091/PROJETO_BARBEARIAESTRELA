@@ -26,6 +26,7 @@ namespace BarbeariaPatrick
                     while (drDados.Read())
                     {
                         Variaveis.CaixaTxtPrecoServico = string.Format("{0:0.00}",drDados["PreçoServico"]);
+                        Variaveis.CaixaTxtIDServico = (short)drDados["IdServiço"];
                     }
                 }
                 else
