@@ -48,14 +48,14 @@
             this.administradorToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // administradorToolStripMenuItem
             // 
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
             this.administradorToolStripMenuItem.Text = "Administrador";
             this.administradorToolStripMenuItem.Click += new System.EventHandler(this.administradorToolStripMenuItem_Click);
             // 
@@ -68,6 +68,7 @@
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.BackColor = System.Drawing.Color.White;
+            this.btnCadastrarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.Location = new System.Drawing.Point(220, 346);
             this.btnCadastrarCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -81,6 +82,7 @@
             // btnEntrarCliente
             // 
             this.btnEntrarCliente.BackColor = System.Drawing.Color.White;
+            this.btnEntrarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrarCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarCliente.Location = new System.Drawing.Point(616, 343);
             this.btnEntrarCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -109,7 +111,7 @@
             // 
             this.pictFotoServico.Image = ((System.Drawing.Image)(resources.GetObject("pictFotoServico.Image")));
             this.pictFotoServico.Location = new System.Drawing.Point(471, 325);
-            this.pictFotoServico.Margin = new System.Windows.Forms.Padding(4);
+            this.pictFotoServico.Margin = new System.Windows.Forms.Padding(0);
             this.pictFotoServico.Name = "pictFotoServico";
             this.pictFotoServico.Size = new System.Drawing.Size(124, 125);
             this.pictFotoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

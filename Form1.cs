@@ -73,6 +73,7 @@ namespace BarbeariaPatrick
         {
             CadastrarFuncionario Tela = new CadastrarFuncionario();
             Tela.Show();
+            this.Hide();
         }
         public void consultaSenha(string sql)
         {

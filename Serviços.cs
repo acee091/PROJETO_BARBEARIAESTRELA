@@ -102,7 +102,7 @@ namespace BarbeariaPatrick
             }
             finally
             {
-                this.Hide();
+                
             }
         }
 
@@ -159,6 +159,8 @@ namespace BarbeariaPatrick
 
             Consultarcliente.fazerConsulta(consulta);
             txtConsultarIDcliente.Text = Variaveis.CaixaTxtIDCliente.ToString();
+            string id = "SEU ID:";
+            lblidcliente.Text = id;
         }
 
         private void lblPrecoCorte_Click(object sender, EventArgs e)

@@ -49,6 +49,7 @@
             // btnCadastrarCliente
             // 
             this.btnCadastrarCliente.BackColor = System.Drawing.SystemColors.InfoText;
+            this.btnCadastrarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.ForeColor = System.Drawing.Color.White;
             this.btnCadastrarCliente.Location = new System.Drawing.Point(484, 447);

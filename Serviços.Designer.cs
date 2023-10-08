@@ -47,7 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIDcliente = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblidcliente = new System.Windows.Forms.Label();
             this.txtConsultarIDcliente = new System.Windows.Forms.TextBox();
             this.btnConsultarID = new System.Windows.Forms.Button();
             this.lblCliente = new System.Windows.Forms.Label();
@@ -165,6 +165,7 @@
             // btnAgendamentoCliente
             // 
             this.btnAgendamentoCliente.BackColor = System.Drawing.Color.White;
+            this.btnAgendamentoCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgendamentoCliente.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgendamentoCliente.Location = new System.Drawing.Point(129, 463);
             this.btnAgendamentoCliente.Margin = new System.Windows.Forms.Padding(4);
@@ -255,19 +256,19 @@
             this.label4.Text = "Digite o SEU ID:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lblidcliente
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(829, 404);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 20);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Digite seu nome:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblidcliente.AutoSize = true;
+            this.lblidcliente.BackColor = System.Drawing.Color.White;
+            this.lblidcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblidcliente.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblidcliente.Location = new System.Drawing.Point(829, 404);
+            this.lblidcliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblidcliente.Name = "lblidcliente";
+            this.lblidcliente.Size = new System.Drawing.Size(152, 20);
+            this.lblidcliente.TabIndex = 23;
+            this.lblidcliente.Text = "Digite seu nome:";
+            this.lblidcliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtConsultarIDcliente
             // 
@@ -326,7 +327,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Uighur", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(805, 359);
+            this.label7.Location = new System.Drawing.Point(793, 359);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(217, 46);
@@ -344,7 +345,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.btnConsultarID);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblidcliente);
             this.Controls.Add(this.txtConsultarIDcliente);
             this.Controls.Add(this.txtIDcliente);
             this.Controls.Add(this.label4);
@@ -392,7 +393,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIDcliente;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblidcliente;
         private System.Windows.Forms.TextBox txtConsultarIDcliente;
         private System.Windows.Forms.Button btnConsultarID;
         private System.Windows.Forms.Label lblCliente;

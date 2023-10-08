@@ -53,5 +53,12 @@ namespace BarbeariaPatrick
         {
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Form1 Tela = new Form1();
+            Tela.Show();
+            this.Hide();
+        }
     }
 }

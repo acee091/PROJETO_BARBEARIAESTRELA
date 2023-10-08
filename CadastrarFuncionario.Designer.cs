@@ -38,6 +38,7 @@
             this.txtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnCadastrarCliente = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +47,10 @@
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(-10, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 50);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(424, 461);
+            this.pictureBox1.Size = new System.Drawing.Size(504, 508);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -59,9 +61,10 @@
             this.lblSenhaLogin.BackColor = System.Drawing.Color.Black;
             this.lblSenhaLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenhaLogin.ForeColor = System.Drawing.Color.White;
-            this.lblSenhaLogin.Location = new System.Drawing.Point(497, 205);
+            this.lblSenhaLogin.Location = new System.Drawing.Point(663, 252);
+            this.lblSenhaLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSenhaLogin.Name = "lblSenhaLogin";
-            this.lblSenhaLogin.Size = new System.Drawing.Size(55, 16);
+            this.lblSenhaLogin.Size = new System.Drawing.Size(67, 20);
             this.lblSenhaLogin.TabIndex = 10;
             this.lblSenhaLogin.Text = "Senha:";
             // 
@@ -71,9 +74,10 @@
             this.lblLogin.BackColor = System.Drawing.Color.Black;
             this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
-            this.lblLogin.Location = new System.Drawing.Point(497, 126);
+            this.lblLogin.Location = new System.Drawing.Point(663, 155);
+            this.lblLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(49, 16);
+            this.lblLogin.Size = new System.Drawing.Size(61, 20);
             this.lblLogin.TabIndex = 9;
             this.lblLogin.Text = "Login:";
             // 
@@ -82,9 +86,10 @@
             this.txtCadastraNome.BackColor = System.Drawing.Color.Black;
             this.txtCadastraNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastraNome.ForeColor = System.Drawing.Color.White;
-            this.txtCadastraNome.Location = new System.Drawing.Point(500, 145);
+            this.txtCadastraNome.Location = new System.Drawing.Point(667, 178);
+            this.txtCadastraNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCadastraNome.Name = "txtCadastraNome";
-            this.txtCadastraNome.Size = new System.Drawing.Size(178, 29);
+            this.txtCadastraNome.Size = new System.Drawing.Size(236, 34);
             this.txtCadastraNome.TabIndex = 8;
             // 
             // txtCadastraSenha
@@ -92,10 +97,11 @@
             this.txtCadastraSenha.BackColor = System.Drawing.Color.Black;
             this.txtCadastraSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCadastraSenha.ForeColor = System.Drawing.Color.White;
-            this.txtCadastraSenha.Location = new System.Drawing.Point(500, 224);
+            this.txtCadastraSenha.Location = new System.Drawing.Point(667, 276);
+            this.txtCadastraSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCadastraSenha.Name = "txtCadastraSenha";
             this.txtCadastraSenha.PasswordChar = '*';
-            this.txtCadastraSenha.Size = new System.Drawing.Size(178, 29);
+            this.txtCadastraSenha.Size = new System.Drawing.Size(236, 34);
             this.txtCadastraSenha.TabIndex = 7;
             // 
             // label1
@@ -104,9 +110,10 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(497, 278);
+            this.label1.Location = new System.Drawing.Point(663, 342);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 16);
+            this.label1.Size = new System.Drawing.Size(167, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "Confirmar SENHA:";
             // 
@@ -115,10 +122,11 @@
             this.txtConfirmarSenha.BackColor = System.Drawing.Color.Black;
             this.txtConfirmarSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConfirmarSenha.ForeColor = System.Drawing.Color.White;
-            this.txtConfirmarSenha.Location = new System.Drawing.Point(500, 297);
+            this.txtConfirmarSenha.Location = new System.Drawing.Point(667, 366);
+            this.txtConfirmarSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtConfirmarSenha.Name = "txtConfirmarSenha";
             this.txtConfirmarSenha.PasswordChar = '*';
-            this.txtConfirmarSenha.Size = new System.Drawing.Size(178, 29);
+            this.txtConfirmarSenha.Size = new System.Drawing.Size(236, 34);
             this.txtConfirmarSenha.TabIndex = 11;
             // 
             // label2
@@ -127,9 +135,10 @@
             this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(446, 54);
+            this.label2.Location = new System.Drawing.Point(595, 66);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(327, 39);
+            this.label2.Size = new System.Drawing.Size(408, 52);
             this.label2.TabIndex = 14;
             this.label2.Text = "Cadastrar Usuário:";
             // 
@@ -138,20 +147,35 @@
             this.btnCadastrarCliente.BackColor = System.Drawing.SystemColors.InfoText;
             this.btnCadastrarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrarCliente.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrarCliente.Location = new System.Drawing.Point(512, 347);
+            this.btnCadastrarCliente.Location = new System.Drawing.Point(683, 427);
+            this.btnCadastrarCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCadastrarCliente.Name = "btnCadastrarCliente";
-            this.btnCadastrarCliente.Size = new System.Drawing.Size(145, 67);
+            this.btnCadastrarCliente.Size = new System.Drawing.Size(193, 82);
             this.btnCadastrarCliente.TabIndex = 15;
             this.btnCadastrarCliente.Text = "Cadastrar";
             this.btnCadastrarCliente.UseVisualStyleBackColor = false;
             this.btnCadastrarCliente.Click += new System.EventHandler(this.btnCadastrarFuncionario_Click);
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.White;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(13, 13);
+            this.btnVoltar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(100, 28);
+            this.btnVoltar.TabIndex = 16;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // CadastrarFuncionario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 451);
+            this.ClientSize = new System.Drawing.Size(1067, 555);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrarCliente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -161,6 +185,7 @@
             this.Controls.Add(this.txtCadastraNome);
             this.Controls.Add(this.txtCadastraSenha);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CadastrarFuncionario";
             this.Text = "CadastrarFuncionario";
             this.Load += new System.EventHandler(this.CadastrarFuncionario_Load);
@@ -181,5 +206,6 @@
         private System.Windows.Forms.TextBox txtConfirmarSenha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnCadastrarCliente;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

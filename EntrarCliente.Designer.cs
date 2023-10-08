@@ -92,6 +92,7 @@
             // btnEntrarLogin
             // 
             this.btnEntrarLogin.BackColor = System.Drawing.SystemColors.InfoText;
+            this.btnEntrarLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarLogin.ForeColor = System.Drawing.Color.White;
             this.btnEntrarLogin.Location = new System.Drawing.Point(439, 337);
@@ -136,7 +137,7 @@
             this.lblCliente.Location = new System.Drawing.Point(360, 51);
             this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(376, 52);
+            this.lblCliente.Size = new System.Drawing.Size(362, 51);
             this.lblCliente.TabIndex = 26;
             this.lblCliente.Text = "ENTRE NA SUA CONTA:";
             this.lblCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

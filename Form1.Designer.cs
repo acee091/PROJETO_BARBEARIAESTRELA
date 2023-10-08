@@ -43,6 +43,7 @@
             // btnEntrarLogin
             // 
             this.btnEntrarLogin.BackColor = System.Drawing.SystemColors.InfoText;
+            this.btnEntrarLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrarLogin.ForeColor = System.Drawing.Color.White;
             this.btnEntrarLogin.Location = new System.Drawing.Point(111, 298);
@@ -135,6 +136,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.btnCadastrar.Location = new System.Drawing.Point(136, 434);
             this.btnCadastrar.Margin = new System.Windows.Forms.Padding(4);
