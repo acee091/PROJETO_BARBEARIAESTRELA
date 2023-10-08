@@ -37,6 +37,7 @@ namespace BarbeariaPatrick
             EntrarCliente Tela = new EntrarCliente();
             Tela.Show();
             this.Hide();
+
         }
 
         private void TelaInicial_Load(object sender, EventArgs e)
