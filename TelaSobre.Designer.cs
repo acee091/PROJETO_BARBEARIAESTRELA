@@ -37,7 +37,9 @@
             this.lblCliente = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inícioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictFotoServico = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSobre
@@ -130,12 +132,23 @@
             this.inícioToolStripMenuItem.Text = "Início";
             this.inícioToolStripMenuItem.Click += new System.EventHandler(this.inícioToolStripMenuItem_Click);
             // 
+            // pictFotoServico
+            // 
+            this.pictFotoServico.Image = ((System.Drawing.Image)(resources.GetObject("pictFotoServico.Image")));
+            this.pictFotoServico.Location = new System.Drawing.Point(591, 241);
+            this.pictFotoServico.Name = "pictFotoServico";
+            this.pictFotoServico.Size = new System.Drawing.Size(197, 197);
+            this.pictFotoServico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictFotoServico.TabIndex = 30;
+            this.pictFotoServico.TabStop = false;
+            // 
             // TelaSobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictFotoServico);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,6 +162,7 @@
             this.Load += new System.EventHandler(this.TelaSobre_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFotoServico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,5 +178,6 @@
         private System.Windows.Forms.Label lblCliente;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem inícioToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictFotoServico;
     }
 }

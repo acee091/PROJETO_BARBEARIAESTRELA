@@ -45,6 +45,12 @@ namespace BarbeariaPatrick
             {
                 MessageBox.Show("As senhas digitadas não correspondem", "Senha inválida");
             }
+
+            txtNomeCliente.Text = string.Empty;
+            txtTelefoneCliente.Text = string.Empty;
+            txtClienteLogin.Text = string.Empty;
+            txtClienteSenha.Text = string.Empty;
+            txtConfirmarClienteSenha.Text = string.Empty;
         }
 
         private void label4_Click(object sender, EventArgs e)

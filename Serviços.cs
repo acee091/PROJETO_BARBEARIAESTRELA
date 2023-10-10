@@ -102,8 +102,15 @@ namespace BarbeariaPatrick
             }
             finally
             {
-                
+               
             }
+            txtIDcliente.Text = string.Empty;
+            txtIDdoServico.Text = string.Empty;
+            txtAgendarHorarioCliente.Text = string.Empty;
+            txtConsultarIDcliente.Text = string.Empty;
+            txtPrecoServico.Text = string.Empty;         
+            lblidcliente.Text = "Digite seu nome completo:";
+
         }
 
         private void txtAgendarHorarioCliente_TextChanged(object sender, EventArgs e)

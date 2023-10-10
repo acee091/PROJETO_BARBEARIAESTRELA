@@ -220,11 +220,11 @@
             this.lblidcliente.BackColor = System.Drawing.Color.White;
             this.lblidcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblidcliente.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblidcliente.Location = new System.Drawing.Point(12, 92);
+            this.lblidcliente.Location = new System.Drawing.Point(3, 92);
             this.lblidcliente.Name = "lblidcliente";
-            this.lblidcliente.Size = new System.Drawing.Size(144, 20);
+            this.lblidcliente.Size = new System.Drawing.Size(222, 20);
             this.lblidcliente.TabIndex = 23;
-            this.lblidcliente.Text = "Digite seu nome:";
+            this.lblidcliente.Text = "Digite seu nome completo:";
             this.lblidcliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtConsultarIDcliente
