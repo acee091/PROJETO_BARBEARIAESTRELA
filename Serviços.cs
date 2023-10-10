@@ -43,7 +43,7 @@ namespace BarbeariaPatrick
             ConsultarServico consultaServico = new ConsultarServico();
             consultaServico.fazerConsulta(consulta);
             txtPrecoServico.Text = Variaveis.CaixaTxtPrecoServico;
-            txtIDservico.Text = Variaveis.CaixaTxtIDServico.ToString();
+            txtIDdoServico.Text = Variaveis.CaixaTxtIDServico.ToString();
 
             string servico = cmbServico.SelectedItem.ToString();
             string imagem = String.Empty;
@@ -83,8 +83,8 @@ namespace BarbeariaPatrick
         private void btnAgendamentoCliente_Click(object sender, EventArgs e)
         {
             sql = "INSERT INTO tbl_AgendamentoCliente(IdCliente, IdServiço, DataAgendamento, HorarioAgendamento) " +
-                "VALUES ('" + txtIDcliente.Text + "','" + txtIDdoServico.Text + "', '" + txtAgendarDataCliente.Text + "', '" + txtAgendarHorarioCliente.Text + "');";
-            MessageBox.Show(sql);
+                "VALUES ('" + txtIDcliente.Text + "','" + txtIDdoServico.Text + "', '" + dateTimePicker1.Value.ToString("dd/MM/yyyy") + "', '" + txtAgendarHorarioCliente.Text + "');";
+            
 
             ComandosDML inserir = new ComandosDML();
             try
@@ -158,8 +158,8 @@ namespace BarbeariaPatrick
             ConsultarIDcliente Consultarcliente = new ConsultarIDcliente();
 
             Consultarcliente.fazerConsulta(consulta);
-            txtConsultarIDcliente.Text = Variaveis.CaixaTxtIDCliente.ToString();
-            string id = "SEU ID:";
+            txtIDcliente.Text = Variaveis.CaixaTxtIDCliente.ToString();
+            string id = "SEU ID FOI INSERIDO!";
             lblidcliente.Text = id;
         }
 
@@ -184,6 +184,16 @@ namespace BarbeariaPatrick
         }
 
         private void txtPrecoServico_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictFotoServico_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -49,5 +49,12 @@ namespace BarbeariaPatrick
         {
 
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TelaSobre Tela = new TelaSobre();
+            Tela.Show();
+            this.Hide();
+        }
     }
 }
